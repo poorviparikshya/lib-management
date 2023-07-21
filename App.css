@@ -1,52 +1,149 @@
+body {
+  margin: 10;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #041331;
-  min-height: 100vh;
+.header {
+  background-color: rgb(101, 219, 186);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(101, 219, 186);
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: navy;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  display: flex; /* Display buttons in a row */
 }
 
-/* App.css */
 .action-button {
-  background-color:  rgb(101, 219, 186);
+  background-color: rgb(255, 255, 255);
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  color: rgb(255, 255, 255);
+  color: rgb(2, 17, 92);
   border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.books {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column; /* Display books in a column */
+  align-items: center;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.book {
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 90%; /* Make book containers wider */
+}
+
+.title, .author, .pages, .genre {
+  margin-bottom: 5px;
+}
+
+/* Additional styles for the top green rectangle */
+.header {
+  background-color: rgb(101, 219, 186);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: navy;
+}
+
+.buttons {
+  display: flex;
+}
+
+/* ... (Previous styles) */
+
+/* ... (Previous styles) */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: rgb(101, 219, 186);
+  color: white;
+  border: 1px solid rgb(101, 219, 186);
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.book {
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 90%;
+  display: flex; /* Display book info in a row */
+  justify-content: space-between;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.title,
+.author,
+.pages,
+.genre {
+  margin-right: 10px;
+}
+
+.view-button {
+  background-color: white;
+  color: navy;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  cursor: pointer;
+}
 
